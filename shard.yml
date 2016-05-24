@@ -5,3 +5,14 @@ authors:
   - Sergey Potapov <blake131313@gmail.com>
 
 license: MIT
+
+
+dependencies:
+  delemma:
+    github: greyblake/crystal-delemma
+  telegram_bot:
+    github: greyblake/crystal-telegram_bot
+  glosbe:
+    github: greyblake/crystal-glosbe
+  google_translate:
+    github: greyblake/crystal-google_translate
