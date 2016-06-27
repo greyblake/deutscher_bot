@@ -12,7 +12,10 @@ dependencies:
     github: greyblake/crystal-delemma
   telegram_bot:
     github: greyblake/crystal-telegram_bot
+    branch: master
   glosbe:
     github: greyblake/crystal-glosbe
+    branch: master
   google_translate:
     github: greyblake/crystal-google_translate
+    branch: master

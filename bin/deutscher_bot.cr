@@ -8,6 +8,7 @@ end
 
 handler = DeutscherBot::Handler.new
 
+puts "Started ..."
 TelegramBot::Bot.new(token).run do |message|
   answer = handler.handle(message.text)
   message.reply(answer)

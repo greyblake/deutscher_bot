@@ -1,8 +1,13 @@
 module DeutscherBot
   class Querier
     def initialize
-      @glosbe = Glosbe::Client.new
-      @google_translate = GoogleTranslate::Client.new
+      @glosbe = Glosbe::Client.new do |cossack|
+        cossack.use FSCacheMiddleware
+      end
+
+      @google_translate = GoogleTranslate::Client.new do |cossack|
+        cossack.use FSCacheMiddleware
+      end
     end
 
     def lookup(query) : Response
